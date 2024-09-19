@@ -62,9 +62,7 @@ public class Bst {
                 else return null;
             }
             else{
-              // if (node.left == null) return node.right;
-               //if (node.right == null) return node.left;
-
+              
                Node successor = getsuccessor(node);
                node.data = successor.data;
                node.right = delete(node.right, successor.data);
