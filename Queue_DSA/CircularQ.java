@@ -37,7 +37,7 @@ public class CircularQ {
     } 
     
     public boolean isFull(){
-        if(front == 0 && rear == SIZE-1)
+        if((front == 0 && rear == SIZE-1)||(front == rear+1))
                 return true;
         else
            return false;
