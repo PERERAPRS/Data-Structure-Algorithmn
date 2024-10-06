@@ -93,9 +93,9 @@ public class Bst {
       void inorder(Node node){
           if(node == null)return;
      
-          preorder(node.left);   
+          inorder(node.left);   
           System.out.print(" /"+node.data);
-          preorder(node.right);
+          inorder(node.right);
        }
        void postorder(Node node){
           if(node == null)return;
